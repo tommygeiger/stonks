@@ -1,0 +1,48 @@
+html, body {
+    font-family: 'Gill Sans', sans-serif;
+    background-color: snow;
+    height: 100%;
+    font-size: 18px;
+
+    background: rgb(69,178,121);
+background: linear-gradient(180deg, rgba(69,178,121,1) 0%, rgba(139,205,170,1) 0%, rgba(200,227,210,0.9875291149068323) 0%, rgba(222,237,227,1) 0%, rgba(249,248,246,1) 19%, rgba(252,249,248,1) 67%, rgba(255,250,250,1) 100%);
+}
+
+ul {
+    list-style-type: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.nav {
+    background-color: mediumseagreen;
+    border: 0px;
+    border-radius: 0px;
+    color: snow;
+}
+.nav-link.nav-user:hover {
+    color: snow;
+    cursor: default;
+}
+.nav-link {
+    color: snow;
+}
+.nav-link:hover {
+    color: black;
+    transition: color .15s ease-in-out;
+}
+.nav-right {
+    border: 0px;
+}
+.btn {
+    color: black;
+    border: 1px solid black;
+}
+.btn:hover {
+    color: snow;
+    background-color: gold;
+    border: 1px solid gold;
+}
+.divider {
+    border-top: 1px solid black;
+}

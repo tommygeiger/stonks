@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+
+{% block title %}Portfolio{% endblock %}
+
+{% block page_content %}
+<div class="page-header">
+    <h1 style> Current Value: </h1>
+    <h1 style="color:blue">${{ portfolio_value }}</h1>
+</div>
+<div class="container">
+
+    <div class="row font-weight-bold">
+        <div class="col">Symbol</div>
+        <div class="col">Price</div>
+        <div class="col">Quantity</div>
+        <div class="col">Total Value</div>
+        <div class="col">Last Date Traded</div>
+    </div>
+    <div class="divider"></div>
+    <div class="row">
+        <div class="col">Cash</div>
+        <div class="col">1.00</div>
+        <div class="col">{{ cash }}</div>
+        <div class="col">{{ cash }}</div>
+        <div class="col"></div>
+    </div>
+
+    {% for row in portfolio %}
+        <div class="row">
+            {% for col in row %}
+            <div class="col">
+                {{ col }}
+            </div>
+            {% endfor %}
+        </div>
+    {% endfor %}
+
+</div><br>
+
+<div class="page-header">
+  <h1>What would you like to do?</h1><br>
+</div>
+<div class="container">
+  <ul>
+    <li><a href="/stonks/trade" class="btn btn-outline-primary my-2 w-25" role="button">Trade</a></li>
+    <li><a href="/stonks/research" class="btn btn-outline-primary my-2 w-25" role="button">Research</a></li>
+    <li><a href="/stonks/leaderboard" class="btn btn-outline-primary my-2 w-25" role="button">View Leaderboard</a></li>
+    <li><a href="/stonks/logout" class="btn btn-outline-primary my-2 w-25" role="button">Log Out</a></li>
+</div>
+{% endblock %}
