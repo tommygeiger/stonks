@@ -1,4 +1,4 @@
-# Stonks - Stock Trading Simulator
+# Stock Trading Simulator
 
 Tommy Geiger, Jeff Pinsker-Smith, and Carmen Ferrone
 
